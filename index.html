@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="tip-calculator-app-main/images/favicon-32x32.png" type="image/x-icon">k
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="left-column">
+            <p id="bill">Bill</p>
+            <input type="text" name="bill" placeholder="0" id="bill-input" class="large-input">
+            <p id="tip-p">Select Tip %</p>
+            <div class="tips-grid">
+                <div id="tip1" class="single-tip">
+                    <h2>5$</h2>
+                </div>
+                <div id="tip2" class="single-tip">
+                    <h2>10$</h2>
+                </div>
+                <div id="tip3" class="single-tip">
+                    <h2>15$</h2>
+                </div>
+                <div id="tip4" class="single-tip">
+                    <h2>25$</h2>
+                </div>
+                <div id="tip5" class="single-tip">
+                    <h2>50$</h2>
+                </div>
+                <input id="tip6" type="text" placeholder="Custom" class="single-tip">
+            </div>
+            <div class="error-wrapper">
+                <p id="number-of-people">Number of People</p>
+                <p id="error"></p>
+            </div>
+            <input type="text" name="number-of-people-input" placeholder="0" id="number-of-people-input"
+                class="large-input">
+        </div>
+
+        <div class="right-column">
+            <div class="result">
+                <div>
+                    <h4 id="tip-amount">Tip Amount</h4>
+                    <p>/ person</p>
+                </div>
+                <h1 id="total-output">$0.00</h1>
+            </div>
+            <div class="result">
+                <div>
+                    <h4 id="total">Total</h4>
+                    <p>/ person</p>
+                </div>
+                <h1 id="total-per-person-output">$0.00</h1>
+            </div>
+            <button class="reset-btn">RESET</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
